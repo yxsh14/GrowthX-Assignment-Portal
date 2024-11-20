@@ -62,19 +62,31 @@ This will start the frontend server, typically running on port 3000.
 
 ## Routes
 ### User Routes:
+
 **Login:**
+
 POST /login: Log in a user.
+
 **Signup:**
+
 POST /signup: Register a new user.
+
 **User Routes:**
+
 GET /user: Fetch user details.
 GET /:id: Get details of a specific assignment.
 POST /:id/submit: Submit an assignment.
+
 ### Admin Routes:
 **Create Assignment:**
+
 POST /create: Admin can create a new assignment.
+
 **Admin Dashboard:**
+
 GET /admin: View all assignments created by the admin and user submissions.
+
 PUT /:id: Update user submissions (Accept or Reject).
+
 ## Summary
 This project allows users to interact with assignments, while admins manage assignment creation and submissions. Users can sign up, log in, and submit assignments, while admins can create assignments, review submissions, and approve or reject them.
