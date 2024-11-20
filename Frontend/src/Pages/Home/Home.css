@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+/* Form Styling */
+form {
+  background-color: #1e1e1e; /* Slightly lighter dark background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  max-width: 400px;
+  width: 100%;
+}
+
+input {
+  width: 90%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #5e35b1; /* Purple accent */
+  outline: none;
+  box-shadow: 0px 0px 5px #5e35b1;
+}
+
+/* Checkbox Container Styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #2a2a2a;
+  border: 2px solid #5e35b1;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: #5e35b1; /* Purple background when checked */
+  border-color: #7e57c2;
+}
+
+.checkbox-container input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid #fff; /* White arrow */
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg); /* Rotates to form the checkmark */
+  display: none; /* Hidden by default */
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+  display: block; /* Visible when checked */
+}
+
+.checkbox-container input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #5e35b1;
+}
+
+.checkbox-container label {
+  font-size: 1rem;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5e35b1; /* Purple button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7e57c2; /* Lighter purple on hover */
+}
+
+/* Error Message Styling */
+.error {
+  color: #ff6b6b; /* Red error color */
+  font-size: 0.9rem;
+  margin-top: -0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+  }
+
+  .auth-container h2 {
+    font-size: 1.8rem;
+  }
+}

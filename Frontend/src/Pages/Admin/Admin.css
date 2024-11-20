@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f2929 ;/* Light background for the entire page */
+    color: #333; /* Standard text color */
+  }
+  
+  /* Admin Dashboard Container */
+  .admin-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  .admin-dashboard h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2; /* Light blue header color */
+  }
+  
+  /* Create Assignment Section */
+  .create-assignment {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .create-assignment h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .create-assignment input,
+  .create-assignment textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical; /* Allows textarea resizing only vertically */
+  }
+  
+  .create-assignment button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-assignment button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Assignments Section */
+  .assignments {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assignments h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  /* Individual Assignment Styling */
+  .assignment {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffeaea;
+  }
+  
+  .assignment h4 {
+    margin-bottom: 10px;
+    color: #4a90e2;
+    font-size: 1.4rem;
+  }
+  
+  /* JSON Viewer Styling */
+  .json-viewer-container {
+    background-color: #2b2b2b; /* Dark background */
+    color: #d4d4d4; /* Light text */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    overflow-x: auto;
+  }
+  
+  .json-viewer-container pre {
+    margin: 0;
+  }
+  
+  .json-viewer-container span {
+    line-height: 1.5;
+  }
+  
+  .json-viewer-container .json-key {
+    color: #4ec9b0;
+    font-weight: bold;
+  }
+  
+  .json-viewer-container .json-string {
+    color: #ce9178;
+  }
+  
+  .json-viewer-container .json-number {
+    color: #b5cea8;
+  }
+  
+  /* Buttons for Actions */
+  .assignment button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assignment button:hover {
+    background-color: #388e3c;
+  }
+  
+  .assignment button:last-child {
+    background-color: #f44336;
+  }
+  
+  .assignment button:last-child:hover {
+    background-color: #d32f2f;
+  }
+  
